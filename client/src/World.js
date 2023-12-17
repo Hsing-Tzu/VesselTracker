@@ -18,7 +18,7 @@ const World = ({ traceResponseData }) => {
   const [selectedPath, setSelectedPath] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3012/api/VesselTraceData')
+    fetch('https://evergreen-vesseltracker.azurewebsites.net/api/VesselTraceData')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
